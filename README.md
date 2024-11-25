@@ -15,8 +15,6 @@ tech_stack = {
 
 ## 📫 ¿Dónde encontrarme?
 
-- 🌐 [Blog/Website](tu-link)
-- 🐦 [Twitter/X](tu-link)
 - 📱 [Threads](tu-link)
 - 💼 [LinkedIn](tu-link)
 
