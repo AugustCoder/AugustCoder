@@ -1,0 +1,40 @@
+name: Generate Snake Contributions Animation
+
+on:
+  # Ejecuta automáticamente cada 24 horas
+  schedule:
+    - cron: "0 0 * * *" 
+  
+  # Permite ejecutar manualmente el workflow
+  workflow_dispatch:
+  
+  # Ejecuta el workflow en cada push a la rama main
+  push:
+    branches:
+      - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      # Generar la animación del gráfico de contribuciones
+      - name: Generar github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: AugustCoder # Cambiado para especificar tu usuario
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Subir el archivo generado a la rama de salida
+      - name: Subir github-contribution-grid-snake.svg a la rama de salida
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
