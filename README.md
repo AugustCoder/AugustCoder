@@ -15,7 +15,7 @@ tech_stack = {
 
 ## 📫 ¿Dónde encontrarme?
 
-- 📱 [Threads](tu-link)
+- 📱 [Threads](https://www.threads.net/@august.mr26)
 - 💼 [LinkedIn](tu-link)
 
 ⭐️ ¡Si encuentras útil alguno de mis repositorios, no dudes en dejar una estrella!
