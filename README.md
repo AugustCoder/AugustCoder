@@ -1,3 +1,7 @@
+<!-- Áreea de  estadisticas -->
+
+
+<!-- Contenido del readme -->
 ### 🚀 Sobre mí
 
 Soy un entusiasta de la tecnología dedicado a hacer que la programación sea accesible para todos. 
@@ -12,6 +16,8 @@ tech_stack = {
     'intereses': ['Desarrollo Web', 'Automatización', 'Mecatrónica']
 }
 ```
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=AugustCoder&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
 
 ## 📫 ¿Dónde encontrarme?
 
